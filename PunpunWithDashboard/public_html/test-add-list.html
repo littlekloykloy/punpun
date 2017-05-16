@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Punpun: HTML5 App Not JSP</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Place favicon.ico in the root directory -->
+	<link rel="shortcut icon" href="assets/logo/gift.png"/>
+	<!-- Animation CSS File. "Please, Don't Touch it" - Ice -->
+	<link rel="stylesheet" href="css/vendor.css">
+	<!-- Custom CSS. Bootstrap 4 already there. -->
+	<link href="css/app_vistor.css" rel="stylesheet" type="text/css"/>
+
+</head>
+<body>
+
+	<div class="main-wrapper">
+		<div class="app" id="app">
+			<div class="container content">
+				<div class="card card-block">
+					<form method="post" action="#menu1">
+
+						<!--Request Item List-->
+						<!--Change id , name , for to item1 2 3 ... ++ if have more than one item.-->
+
+						<!--Item 1-->
+						<div class="col-md-12">
+							<input class="accordion" type="checkbox" id="wanted1" name="wanted1">
+							<label for="wanted1">สังกะสียาว ขนาด 10 ฟุต</label>
+							<div class="panel">
+								<ul class="actions" style="margin-top: 1em;!important">
+									<li><a href="#" class="button alt fit small" style="color:red !important;">50</a></li>
+									<li><a href="#" class="button alt fit small">100</a></li>
+									<li><a href="#" class="button alt fit small">500</a></li>
+									<li><a href="#" class="button alt fit small">1000</a></li>
+									<li><input type="text" name="name" id="name" value="" placeholder="Enter Other Amount" /></li>
+
+								</ul>
+							</div>
+						</div>
+
+						<!--Item 2-->
+						<div class="col-md-12">
+							<input class="accordion" type="checkbox" id="wanted2" name="wanted2">
+							<label for="wanted2">ตะปูสังกะสี</label>
+							<div class="panel">
+								<ul class="actions" style="margin-top: 1em;!important">
+									<li><a href="#" class="button alt fit small">50</a></li>
+									<li><a href="#" class="button alt fit small">100</a></li>
+									<li><a href="#" class="button alt fit small">500</a></li>
+									<li><a href="#" class="button alt fit small">1000</a></li>
+									<li><input type="text" name="name" id="name" value="" placeholder="Enter Other Amount" /></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-md-12">
+							<input type="checkbox" id="wanted3" name="wanted3">
+							<label class="accordion" for="wanted3">ปูนซีเมนต์อินทรีย์แดง</label>
+							<div class="panel">
+								<ul class="actions" style="margin-top: 1em;!important">
+									<li><a href="#" class="button alt fit small">50</a></li>
+									<li><a href="#" class="button alt fit small">100</a></li>
+									<li><a href="#" class="button alt fit small">500</a></li>
+									<li><a href="#" class="button alt fit small">1000</a></li>
+									<li><input type="text" name="name" id="name" ng-model="name1" value="" placeholder="Enter Other Amount" /></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-md-12">
+							<input type="checkbox" id="wanted4" name="wanted4">
+							<label class="accordion" for="wanted4">ไม้โครง ขนาด 6 นิ้วหนา 2 นิ้วหนา ยาว 6 ม.</label>
+							<div class="panel">
+								<ul class="actions" style="margin-top: 1em;!important">
+									<li><a href="#" class="button alt fit small">50</a></li>
+									<li><a href="#" class="button alt fit small">100</a></li>
+									<li><a href="#" class="button alt fit small">500</a></li>
+									<li><a href="#" class="button alt fit small">1000</a></li>
+									<li><input type="text" name="name" id="name" ng-model="name2" value="" placeholder="Enter Other Amount" /></li>
+								</ul>
+							</div>
+						</div>
+
+						<!--ใช้อันนี้ อันนี้เป็น Radio Button แล้ว-->
+						<div class="col-md-12">
+							<input type="checkbox" id="wanted5" name="wanted5">
+							<label class="accordion" for="wanted5">ตะปู ขนาด 4 นิ้ว</label>
+							<div class="panel">
+								<ul class="actions" style="margin-top: 1em;!important">
+									<label for="funds"></label>
+									<input type="radio" id="50" name="funds" checked>
+									<label for="50">50</label>
+									<input type="radio" id="100" name="funds" >
+									<label for="100">100</label>
+									<input type="radio" id="500" name="funds" >
+									<label for="500">500</label>
+									<input type="radio" id="Other_funds" name="funds" >
+									<label for="Other_funds"><input type="text" name="name" id="name" ng-model="name2" value="" placeholder="Enter Other Amount" /></label>
+
+								</ul>
+							</div>
+						</div>
+					</form>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- Script -->
+	<script src="js/vendor.js"></script>
+	<script src="js/app.js"></script>
+
+</body>
+</html>
+
